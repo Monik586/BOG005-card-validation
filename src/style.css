@@ -1,3 +1,112 @@
-body { 
-    background:img src="fondo-patas.png" alt="logo" style="width: 90%; height: 200px; object-fit: contain;">
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
+
+main {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    color: #192a56;
+    font-size: 50px;
+}
+
+#primerpaso {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+article {
+    padding: 10px 10px 10px 0px;
+}
+
+h2 {
+    text-align: justify;
+    color:#26213d;
+    font-size: 25px;
+}
+
+h4 {
+    text-align: center;
+    color:#192a56;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+h5 {
+    text-align: center;
+    color:#192a56;
+    font-size: 15px;
+}
+
+#mostrarPagina2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#cardNumber {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+    
+
+#container {
+    width: 80vw;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 1em 5em 1em;
+    opacity: 0.9;
+}
+
+#containerPagina2 {
+    width: 80vw;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 1em 5em 1em;
+    opacity: 0.9; 
+}
+
+#pagina1, #pagina2 {
+    background-position: center;
+    background-image: url(img/background4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+   

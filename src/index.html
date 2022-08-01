@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Petlovers</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-  </head>
 
-  <body >
-    <header>
-    
-    <h1>Petlovers</h1>
-    <section class="container">
-      <img src="Logo pets lover.png" alt="logo" style="width: 90%; height: 200px; object-fit: contain;">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <title>PetLovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section id="pagina1">
+    <div id="container">
+      <header>
+        <h1>Petlovers</h1>
+        <h2>Bienvenido a la plataforma de Donaciones</h2>
+      </header>
+      <div class="figure">
+        <p><img src="img/Logo pets lover.png" width="400px" height="200px"></p>
+      <article>
+        <h4>Por que Donar puede hacer la diferencia</h4>
+      </article>
+      <div id="mostrarPagina2">
+        <button type="button">Donar</button>
+      </div>
+   </div>
+   </div>
+  </section>
+
+  <section id="pagina2" style="display:none">
+    <div id="containerPagina2">
+      <header>
+        <h1>Petlovers</h1>
+        <h4>Ingrese su número de tarjeta de Crédito</h4>
+      </header>
+      <main>
+        <div id="primerpaso">
+        <input type="text" id="cardNumber" onkeypress="return event.charCode>=48 && event.charCode<= 57" required
+        minlength="16" maxlength="16" size="18" placeholder="xxxx xxxx xxxx xxxx" />
+        <p id ="resultado"></p>
+        </div>
+        <h5>Fecha de expiración de la tarjeta</h5>
+        <div id="Fecha">
+
+    <section id="mes">
+      Mes:
+      <select id="mesVencimiento">
+        <option disabled selected value="reinicio"></option>
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Setiembre">Setiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select>
+      Año:
+      <select title id="añoVencimiento">
+        <option disabled selected value="reinicio"></option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+      </select>
     </section>
+    <br>
+    <button type="submit" id="enviar" value="button">Enviar</button>
+    <br>
+  </div>
+      </main>
+    </div>
+  </section>
+  <script src="index.js" type="module"></script>
+</body>
 
-  </header>
-
-       <h4> Bienvenido a la plataforma de pagos</h4>
-
-       <p>Pague aquí con su tarjeta de crédito</p>
-
-    <form>
-      <input type="text" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" name="credit card"/>
-      
-     
-      <p>Fecha de expiración de la tarjeta</p> 
-      
-
-      
-      <!-- <section id="mes">
-        Mes:
-        <select id="mesVencimiento">
-            <option disabled selected value="reinicio"></option>
-                <option value="Enero">Enero</option><option value="Febrero">Febrero</option><option value="Marzo">Marzo</option>
-                <option value="Abril">Abril</option><option value="Mayo">Mayo</option><option value="Junio">Junio</option>
-                <option value="Julio">Julio</option><option value="Agosto">Agosto</option><option value="Setiembre">Setiembre</option>
-                <option value="Octubre">Octubre</option><option value="Noviembre">Noviembre</option><option value="Diciembre">Diciembre</option>
-        </select>
-        Año:
-        <select title id= "añoVencimiento">
-            <option disabled selected value="reinicio"></option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option>
-            <option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option>
-            <option value="2029">2029</option><option value="2030">2030</option>
-         </select>
-       </section> -->
-      <button type="submit" id="enviar">Send</button> 
-      </form>
-      <script src="index.js" type="module"></script>
-  </body>
 </html>
-       
-
-          
-
-
-
-
-
-
-
-  
